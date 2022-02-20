@@ -70,18 +70,43 @@ header {
 header div {
     margin: auto 0;
     display: none;
-    width: 25px;
+    width: 40px;
 }
 
 #logo {
     margin: auto 0;
     font-weight: 700;
     font-size: medium;
+    display: none;
+}
+
+#l1 {
+    color: rgba(0, 128, 0, 0.5);
+    font-style: bold;
+    font-size: 2rem;
+}
+#l2 {
+    color: rgba(255, 0, 0, 0.5);
+    font-style: bold;
+    font-size: 2rem;
+}
+#l3 {
+    color: rgba(208, 255, 0, 0.5);
+    font-style: bold;
+    font-size: 2rem;
+}
+
+.break { 
+    display: none;
 }
 
 @media only screen and (max-width: 380px) {
     .image {
         display: none;
+    }
+
+    #logo {
+        display: block;
     }
     
     header div {
@@ -101,5 +126,9 @@ header div {
     }
     h2, p {
         font-size: medium;
-   
+    }
+
+    .break {
+        display: block;
+    }
   }
