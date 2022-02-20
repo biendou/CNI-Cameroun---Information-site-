@@ -10,6 +10,13 @@ body {
     align-items: center;
     
 }
+h1, h2, p {
+     text-align: center;
+}
+
+em {
+    font-style: normal;
+}
 
 div img {
     width: 100%;
@@ -65,3 +72,34 @@ header div {
     display: none;
     width: 25px;
 }
+
+#logo {
+    margin: auto 0;
+    font-weight: 700;
+    font-size: medium;
+}
+
+@media only screen and (max-width: 380px) {
+    .image {
+        display: none;
+    }
+    
+    header div {
+        
+        display:block; 
+       
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    h1 {
+        display: none;
+    }
+    h2, p {
+        font-size: medium;
+   
+  }
