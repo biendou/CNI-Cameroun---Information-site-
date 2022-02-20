@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Roboto:wght@400;700;900&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
@@ -25,10 +26,16 @@
     </div>
     <div>
         <h2>Recherche d'informations<br class="break"> sur titres identitaires</h2>
-        <form action="Post">
+        <form action="Post" id="formulaire" onsubmit="return false">
             <input type="text" placeholder="CE75415L5IP98KFQ6MZ0" id="input">
             <input type="submit" value="Lancer la recherche" id="submit">
         </form>
+        <picture>
+            <img src="images/128px-Loader.gif" alt="" id="loader">
+        </picture>
+        <div id="response">
+
+        </div>
 
     </div>
     <footer>
@@ -37,5 +44,6 @@
         <p> <em>Copyright &copy; 2022 <br class="break"> Cameroun Service Agency</em></small></p>
     </footer>
 </body>
+<script src="Script/script-cni.js"></script>
 
 </html>
