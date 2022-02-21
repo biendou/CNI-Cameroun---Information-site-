@@ -25,6 +25,7 @@ let responses = [{
     prenom: "",
     posteIdentification: ""
 },]
+
 function removeElementsByClass(className) {
     const elements = document.getElementsByClassName(className);
     while (elements.length > 0) {
