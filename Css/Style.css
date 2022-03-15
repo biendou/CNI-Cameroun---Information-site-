@@ -12,8 +12,12 @@ a {
 font-weight: 700;
     
 }
+h1 {
+    display: none;
+}
 h1, h2, p {
      text-align: center;
+     font-size: medium;
 }
 
 em {
@@ -66,12 +70,13 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 
 
 header div {
     margin: auto 0;
-    display: none;
+    display: block;
     width: 40px;
 }
 
@@ -79,7 +84,7 @@ header div {
     margin: auto 0;
     font-weight: 700;
     font-size: medium;
-    display: none;
+    display: block;
 }
 
 #l1 {
@@ -99,7 +104,7 @@ header div {
 }
 
 .break { 
-    display: none;
+    display: block;
 }
 #response {
     width: 100%;
@@ -125,35 +130,38 @@ picture{
 #loader {
     width: 128px;
 }
-@media only screen and (max-width: 380px) {
+.image {
+    display: none;
+}
+@media only screen and (min-width: 680px) {
     .image {
-        display: none;
+        display: block;
     }
 
     #logo {
-        display: block;
+        display: none;
     }
     
     header div {
         
-        display:block; 
+        display:none; 
        
     }
     header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 100%;
+        
     }
 
     h1 {
-        display: none;
+        display: block
     }
     h2, p {
-        font-size: medium;
+        font-size: normal ;
     }
 
     .break {
-        display: block;
+        display: none;
     }
   }
