@@ -27,7 +27,7 @@
     <div>
         <h2>Recherche d'informations<br class="break"> sur titres identitaires</h2>
         <form action="Post" id="formulaire" onsubmit="return false">
-            <input type="text" placeholder="CE75415L5IP98KFQ6MZ0" id="input">
+            <input type="text" placeholder="CE75415L5IP98KFQ6MZ0" id="input" required="required" minlength="20">
             <input type="submit" value="Lancer la recherche" id="submit">
         </form>
         <picture>
@@ -39,9 +39,9 @@
 
     </div>
     <footer>
-        <p><small><a href="#">Contact</a></p>
-
-        <p> <em>Copyright &copy; 2022 <br class="break"> Cameroun Service Agency</em></small></p>
+        <div><a href="#">Contact</a></div>
+        <div id="tuto"><a href="#">Need Help ?</a></div>
+        <div id="end"> <em>Copyright &copy; 2022 CSA <br class="break"> </em></div>
     </footer>
 </body>
 <script src="Script/script-cni.js"></script>

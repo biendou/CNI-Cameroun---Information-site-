@@ -8,10 +8,11 @@ body {
 }
 
 a {
- text-decoration: none;
-font-weight: 700;
-    
+color: black;
+font-weight: 300;
 }
+
+
 h1 {
     display: none;
 }
@@ -61,11 +62,20 @@ form {
     box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.637);
 }
 footer {
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgb(226, 217, 217);
+    font-size: small;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
+footer div {
+    color: black;
+    margin: auto 10px ;
+}
 header {
     display: flex;
     flex-direction: row;
@@ -78,6 +88,11 @@ header div {
     margin: auto 0;
     display: block;
     width: 40px;
+}
+
+header h1 {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #logo {
@@ -125,17 +140,31 @@ header div {
 picture{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 #loader {
     width: 128px;
 }
 .image {
     display: none;
+    
 }
+#tuto {
+    margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+#tuto a {
+    margin: auto;
+}
+   
 @media only screen and (min-width: 680px) {
     .image {
         display: block;
+        margin-top: 3%;
+        margin-bottom: 2%;
     }
 
     #logo {
